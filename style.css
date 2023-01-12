@@ -1,0 +1,181 @@
+html{
+    font-size: 62.5%;
+    background-color: rgba(255, 166, 0, 0.658);
+}
+*{
+    margin:0rem;
+    padding:0rem;
+}
+.navbar{
+   display: flex;
+   height: 5.0rem;
+   justify-content: center;
+   align-items: center;
+   position: sticky;
+   top: 0%;
+   background-color: orange;
+   height: fit-content;
+   cursor: pointer;
+}
+#kids{
+    margin-left: -30rem;
+    height: 20rem;
+}
+.ul1{
+   width: 50%;
+   display: flex;
+   font-size: 2rem;
+    justify-content: center;
+   align-items: center; 
+   margin-left: -50rem;
+   
+}
+.logo{
+    font-family: 'Tapestry', cursive;
+}
+
+#p1{
+margin-left: -5rem;
+font-size: 3rem;
+}
+#p2{
+    margin-left: -2rem;
+    font-size: 3rem;
+    
+}
+.ul1 li{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:.2rem;
+    margin-left:5.0rem;
+
+}
+.ul1 li a:hover{
+   color: grey;
+
+}
+.ul1 li a:visited{
+    color: aliceblue;
+}
+.rightnav{
+ width: 50%;
+ text-align: right;
+ justify-content:center;
+}
+
+.background{
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 70rem;
+    margin: auto;
+    height: 50%;
+}
+
+.firstsection{
+    height: 100vh;
+}
+.first-half{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+
+#btn2{
+    margin-left: 20rem;
+    margin-top: 8rem;
+    font-size: 4rem;
+    width: 41rem;
+    background-color: green;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 2rem;
+}
+.text-big{
+  font-size: 5rem;
+  font-family:cursive;
+  margin-top: 1rem;
+  margin-left: -3rem;
+}
+.text-small{
+  font-size: 1.0rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#trialclasses{
+    margin-left: 35rem;
+    font-size: 4.0rem;
+    align-content: center;
+    justify-content: center;
+    width: 80rem;
+    height: 18rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+#classSection1{
+     display: flex;
+     justify-content: center;
+     align-content: center;
+     
+}
+#hurry{
+    font-size: 8rem;
+    width: 100rem;
+    margin-left: -5rem;
+}
+#time{
+   font-size: 6rem;
+   color:orchid;
+}
+#t{
+    border: 2px solid orangered;
+    width: 50rem;
+    margin-left: 19rem;
+    background-color: blueviolet;
+}
+#classSection2{
+    display: flex;
+    justify-content: center;
+     align-content: center;
+}
+.allbuttondiv{
+    border-radius: 2rem;
+    margin:3.2rem;
+   padding:3.0rem;
+   font-size: 2rem;
+   color:black;
+   font-style: oblique;
+}
+
+.allbutton{
+    border-radius: 6rem;
+    height: 4.0rem;
+    margin: .0rem;
+    padding: 6rem; 
+    justify-content: center; 
+    font-weight: bolder;
+    transition: 2s;
+}
+.allbutton:hover{
+    background-color: #3e8e41;
+    width: 25rem;
+}
+
+
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width:768px) {
+    html{
+        font-size: 45%;
+    }
+}

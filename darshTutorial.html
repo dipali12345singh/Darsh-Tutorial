@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Darsh Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar background">
+        <ul class="ul1">
+            <div class="logo"><p id="p1">Darsh</p><p id="p2">Tutorial</p></div>
+            <li><a href="darshTutorial.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+        
+    </nav>
+   
+    <section class="background firstsection">
+    <div class="box-main">
+        <div id="kids">
+            <img src="C:\Users\Dipali\Desktop\iwtexam\children.png" alt="KidsImage" height="400rem" width="300rem">
+        </div>
+        <div class="first-half">
+            <p class="text-big">"Your Child deserve the best Education"</p>
+           
+            <div class="button">
+                <button id="btn2" onclick="googleForm()">To Register click here</button>
+            </div>
+        </div>
+    </div>
+    <div id="trialclasses">
+        <p id="hurry">3 DAYS TRIAL CLASSES</p>
+        <!-- <div id="t"><p id="time"></p></div> -->
+    </div>
+    <div id="main">
+        <div id="classSection1" class="background">
+            <div id="class5th" class="allbuttondiv">
+                <button  id="fifth" onclick="fifthinfo()" class="allbutton">CLASS-5TH</button>
+                <p id="fifth1"></p>
+                <p id="fifth2"></p>
+                <p id="fifth3"></p>
+                <p id="fifth4"></p>
+            </div>
+            
+            <div id="class6th" class="allbuttondiv">
+                <button  id="sixth" onclick="sixthinfo()" class="allbutton">CLASS-6TH</button>
+                <p id="sixth1"></p>
+                <p id="sixth2"></p>
+                <p id="sixth3"></p>
+                <p id="sixth4"></p>
+            </div>
+            
+            <div id="class7th" class="allbuttondiv">
+                <button id="seventh" onclick="seventhinfo()" class="allbutton">CLASS-7TH</button>
+                <p id="seventh1"></p>
+                <p id="seventh2"></p>
+                <p id="seventh3"></p>
+                <p id="seventh4"></p>
+            </div>
+        </div>
+        <div id="classSection2" class="background">
+            
+            <div id="class8th" class="allbuttondiv">
+                <button  id="eight" onclick="eightinfos()" class="allbutton">CLASS-8TH</button>
+                <p id="eight1"></p>
+                <p id="eight2"></p>
+                <p id="eight3"></p>
+                <p id="eight4"></p>
+            </div>
+            
+            
+            <div id="class9th" class="allbuttondiv">
+                <button  id="ninth" onclick="ninthinfo()" class="allbutton">CLASS-9TH</button>
+                <p id="ninth1"></p>
+                <p id="ninth2"></p>
+                <p id="ninth3"></p>
+                <p id="ninth4"></p>
+            </div>
+           
+            <div id="class10th" class="allbuttondiv">
+                <button  id="tenth" onclick="tenthinfo()" class="allbutton">CLASS-10TH</button>
+                <p id="tenth1"></p>
+                <p id="tenth2"></p>
+                <p id="tenth3"></p>
+                <p id="tenth4"></p>
+            </div>
+        </div>
+        </div>
+    </section>
+   <script>
+       function googleForm(){
+           let value="https://docs.google.com/forms/d/e/1FAIpQLSedIV7HgtRr_rOQGTNvKDGU8NRaHK56T9HtoX_O5g0e6DAxHg/viewform?vc=0&c=0&w=1&flr=0&usp=mail_form_link";
+           let btnOpen=document.getElementById('btn2');
+           btnOpen.addEventListener('click',()=>{
+               window.open(value,'_blank');
+           });
+
+       }
+       var countDownDate = new Date("Nov 23, 2022 10:00:00").getTime();
+       var x = setInterval(function() {
+       var now = new Date().getTime();
+       var distance = countDownDate - now;
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+       document.getElementById("time").innerHTML = days + "d " + hours + "h "+ minutes + "m " + seconds + "s ";
+     if (distance < 0) {
+       clearInterval(x);
+       document.getElementById("time").innerHTML = "EXPIRED";
+               }
+              }, 1000);
+    function fifthinfo(){
+        document.getElementById("fifth1").innerHTML="Time:-4:30PM to 5:30PM";
+        document.getElementById("fifth2").innerHTML="Subject:-All Subject";
+        document.getElementById("fifth3").innerHTML="Fess:-500/month";
+        document.getElementById("fifth4").innerHTML="Board:-CBSC&StateBoard";
+    }
+    function sixthinfo(){
+        document.getElementById("sixth1").innerHTML="Time:-5:30PM to 6:30PM";
+        document.getElementById("sixth2").innerHTML="Subject:-All Subject";
+        document.getElementById("sixth3").innerHTML="Fess:-600/month";
+        document.getElementById("sixth4").innerHTML="Board:-CBSC&StateBoard";
+    }
+    function seventhinfo(){
+        document.getElementById("seventh1").innerHTML="Time:-6:30PM to 7:30PM";
+        document.getElementById("seventh2").innerHTML="Subject:-All Subject";
+        document.getElementById("seventh3").innerHTML="Fess:-700/month";
+        document.getElementById("seventh4").innerHTML="Board:-CBSC&StateBoard";
+    }
+    function eightinfos(){
+        document.getElementById("eight1").innerHTML="Time:-8:30PM to 9:30PM";
+        document.getElementById("eight2").innerHTML="Subject:-All Subject";
+        document.getElementById("eight3").innerHTML="Fess:-800/month";
+        document.getElementById("eight4").innerHTML="Board:-CBSC&StateBoard";
+    }
+    function ninthinfo(){
+        document.getElementById("ninth1").innerHTML="Time:-7:30PM to 8:30PM";
+        document.getElementById("ninth2").innerHTML="Subject:-All Subject";
+        document.getElementById("ninth3").innerHTML="Fess:-12000/year";
+        document.getElementById("ninth4").innerHTML="Board:-CBSC&StateBoard";
+    }
+    function tenthinfo(){
+        document.getElementById("tenth1").innerHTML="Time:-6:30PM to 7:30PM";
+        document.getElementById("tenth2").innerHTML="Subject:-All Subject";
+        document.getElementById("tenth3").innerHTML="Fess:-15000/year";
+        document.getElementById("tenth4").innerHTML="Board:-CBSC&StateBoard";
+    }
+    
+   </script>
+</body>
+</html>
